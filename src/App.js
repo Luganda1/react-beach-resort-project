@@ -15,11 +15,11 @@ function App() {
     <React.Fragment>
       <Navbar/>
       <Switch>
-      <Route exact path="/" component={Home}/>
-      <Route exact path="/rooms/" component={Rooms}/>
-      <Route exact path="/rooms/:slug/" component={SingleRooms}/>
-      <Route component={Error}/>
-      </Switch>
+        <Route exact path="/" component={Home}/>
+        <Route exact path="/rooms/" component={Rooms}/>
+        <Route exact path="/rooms/:slug/" component={SingleRooms}/>
+        <Route component={Error}/>
+        </Switch>
       
     </React.Fragment>
   );

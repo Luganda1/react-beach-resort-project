@@ -28,12 +28,12 @@ export default class RoomProvider extends Component {
     // getData{}
     getData = async () => {
         try {
-            // let response = await Client.getEntries({
-            //     content_type: "beachResortRoomContentFul",
-            //     order: 'sys.createdAt'
-            //     //order:"feild.price"
-            //     //order: "-field.price" for reverse order
-            //     });
+            let response = await Client.getEntries({
+                content_type: "beachResortRoomContentFul",
+                order: 'sys.createdAt'
+                //order:"feild.price"
+                //order: "-field.price" for reverse order
+                });
                 
                 // let rooms = this.formatData(response.items); 
                 //we can only use this format after uploadin outr data on contentful
