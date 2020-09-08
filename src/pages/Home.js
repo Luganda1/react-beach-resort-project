@@ -13,7 +13,7 @@ export default function Home() {
             title="luxurious rooms"
             subtitle="deluxe rooms starting at ugx 10,000/="
             >
-                <Link at="/rooms/" className="btn-primary">our rooms</Link>
+                <Link to="/rooms/" className="btn-primary">our rooms</Link>
             </Banner>
         </Hero>
         <Services />

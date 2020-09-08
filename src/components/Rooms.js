@@ -13,7 +13,7 @@ export default function Rooms({room}) {
                 <h6>${price}</h6>
                 <p>per night</p>
             </div>
-            <Link to={`/rooms/${slug}`} className="btn-primary room-link">features</Link>
+            <Link to={"/rooms/${slug}"} className="btn-primary room-link">featured</Link>
             </div>
             <p className="room-info">{name}</p>
         </article>

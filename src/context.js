@@ -31,13 +31,12 @@ export default class RoomProvider extends Component {
             let response = await Client.getEntries({
                 content_type: "beachResortRoomContentFul",
                 //order: 'sys.createdAt'
-                order:"field.price"
+                order:"-fields.price"
                 //order: "-field.price" for reverse order
                 });
                 
-                // let rooms = this.formatData(response.items); 
-                //we can only use this format after uploadin outr data on contentful
-                let rooms = this.formatData(items);
+                
+        let rooms = this.formatData(response, items);
         let featuredRooms = rooms.filter(room => room.featured === true )
         let maxPrice = Math.max(...rooms.map(item => item.price))
         let maxSize = Math.max(...rooms.map(item => item.size))
@@ -54,6 +53,8 @@ export default class RoomProvider extends Component {
             console.log(error)
         }
     }
+
+        
 
     componentDidMount() {
         this.getData()
