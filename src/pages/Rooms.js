@@ -10,7 +10,7 @@ export default function Rooms() {
         <Hero hero="roomsHero">
                 <Banner 
                 title="our rooms">
-                    <Link at="/" className="btn-primary">
+                    <Link to="/" className="btn-primary">
                         ewasokelwako
                     </Link>
                 </Banner>
